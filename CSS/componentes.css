@@ -67,20 +67,3 @@ h1 {
   font-weight: normal; /* Ou qualquer valor mais leve */
 }
 
-.btn-container {
-  display: flex;
-  justify-content: center;         /* Centraliza o botão horizontalmente */
-  width: 100%;                     /* Ocupa toda a largura disponível */
-  margin-top: 50px;
-  margin-bottom: -50px;
-}
-
-.btn {
-  padding: 10px 20px;
-  margin: 20px;
-  background-color: #c4320a;
-  color: white;
-  text-decoration: none;
-  border-radius: 15px;
-  font-size: 16px;
-}
