@@ -30,6 +30,10 @@
         width: 100%;                     /* Ocupa toda a largura disponível */
         margin-top: -15px;
       }
+
+      .whatsapp-icon {        
+        transform: translateY(520%); /* Ajuste para centralizar exatamente no meio */  
+    }
 }
 
 /* Estilos para telas médias (Tablets) */

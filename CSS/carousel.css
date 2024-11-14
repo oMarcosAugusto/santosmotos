@@ -4,13 +4,13 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    max-width: 1500px;
     margin: auto;
 }
 
 /* Definição do carrossel em linha */
 .carousel {
     display: flex;
+   
     transition: transform 0.5s ease-in-out;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .carousel-item img {
-    width: 80%;
+    width: 65%;
     border-radius: 10px;
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -60,6 +60,7 @@
 }
 
 .next {
+
     right: 20px;
 }
 
