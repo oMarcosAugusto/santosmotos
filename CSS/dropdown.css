@@ -1,0 +1,47 @@
+
+/* Menu dropdown */
+.dropdown {   
+    padding: auto;
+    position: relative; /* Necessário para posicionar o submenu em relação ao item "Motos" */
+}
+
+/* Remover a borda do submenu */
+.dropdown-menu {
+    
+    display: none;
+    position: absolute;
+    top: 100%; /* Coloca o submenu logo abaixo do item "Motos" */
+    background-color: #333;
+    padding: 15px 0;
+    margin: auto -10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Mostra o submenu ao passar o mouse sobre o item "Motos" */
+.dropdown:hover .dropdown-menu {
+    
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Garante que o submenu não se mova */
+}
+
+/* Estiliza os links do submenu */
+.dropdown-menu a {
+    
+    display: block;
+    padding: 2px auto;
+    white-space: nowrap;
+}
+
+.dropdown-menu a:hover {
+    background-color: #d43f3a; /* Cor vermelha para destaque */
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.dropdown-menu li  {
+    border: none;
+
+}

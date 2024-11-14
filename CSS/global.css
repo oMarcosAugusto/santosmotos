@@ -1,0 +1,36 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Remover a barra de rolagem */
+body {
+    color: #fff;
+    background-color: #111;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    overflow-y: hidden; /* Evita rolagem vertical */
+    margin: 0 ;
+    height: 100vh; /* Define altura de 100% da viewport */
+    display: flex;
+    flex-direction: column;
+     margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Footer fixo no final da página */
+footer {
+    padding: 10px;
+    background-color: #c4320a;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
