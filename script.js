@@ -54,3 +54,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 console.log("Largura da tela:", window.innerWidth);
 console.log("Altura da tela:", window.innerHeight);
+

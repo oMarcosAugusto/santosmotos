@@ -1,0 +1,38 @@
+.container_motos_comprar {
+    padding: 50px 50px;
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(150px, 1fr)); /* Colunas com min 150px e max proporcional */
+    gap: 10px; /* Espaço entre os itens */
+    grid-auto-rows: 1fr; /* Define que as linhas devem ter alturas iguais */
+    /* grid-row: 8rem 8rem; */
+}
+
+.motos_img{
+    border-top-left-radius: 4px; /* Canto superior esquerdo */
+    border-top-right-radius: 4px; /* Canto superior direito */
+    background-color: rgba(172, 164, 151, 0.889);
+    max-width: 100%;
+    
+}
+
+.container_motos_info {
+    background-color: rgba(172, 164, 151, 0.889);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsivo */
+    gap: 10px;
+    padding: 20px;
+    align-items: stretch; /* Faz os itens crescerem igualmente */
+    height: 100%; /* Garante altura total dentro do card */
+}
+.item_motos_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}

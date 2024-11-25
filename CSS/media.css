@@ -1,6 +1,14 @@
 /* Estilos para telas grandes (Desktop) */
 @media (max-width: 1537px) {
 
+    .logo > img {
+        display: flex;
+        max-width: 13%;
+        margin-top: 10px;
+        margin-bottom: -30px;
+        margin-left: 65px;
+      }
+
     .carousel-item img {
         width: 60%;
     }
@@ -12,12 +20,14 @@
         padding: 0 100px;
         margin: 0;
     }
-    h1 {
-        font-size: 25px;
+
+    .content > h1 {
+        font-size: 30px;
     } 
 
-    ul {
+    .content ul > li {
         font-size: 18px;
+        margin-right: 50px;
     }
 
     .logo {

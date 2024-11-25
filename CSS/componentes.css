@@ -59,6 +59,10 @@ header > nav > ul > li:not(:last-child) {
 
 }
 
+.content > ul {
+  text-transform: uppercase;
+}
+
 .content h1 {
   font-size: 30px;
 }
@@ -77,4 +81,13 @@ strong {
 h1 {
   font-weight: normal; /* Ou qualquer valor mais leve */
 }
+
+/* MENU HOVER */
+.menu_home:hover a p,
+.menu_motos:hover,
+.menu_sobrenos:hover,
+.menu_contato:hover {
+  text-shadow: 2px 2px 8px rgba(197, 14, 14, 0.938);
+}
+
 
