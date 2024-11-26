@@ -6,31 +6,46 @@
     font-family: Arial, sans-serif;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+}
 
 
-/* Remover a barra de rolagem */
 body {
     color: #fff;
     background-color: #111;
     overflow-x: hidden; /* Evita rolagem horizontal */
-    overflow-y: hidden; /* Evita rolagem vertical */
-    margin: 0 ;
+    /* overflow-y: hidden;  Evita rolagem vertical  */
+    margin: 0;
     height: 100vh; /* Define altura de 100% da viewport */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Garante que o body e o html ocupem 100% da janela */
     display: flex;
     flex-direction: column;
-     margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
 }
 
-/* Footer fixo no final da página */
+header {
+    flex-shrink: 0; /* Garante que o header não seja comprimido */
+}
+
+section {
+    flex-grow: 1; /* Faz o conteúdo ocupar o espaço disponível */
+}
+
 footer {
-    padding: 10px;
-    background-color: #c4320a;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-
-    
-    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    flex-shrink: 0; /* O footer sempre terá seu tamanho padrão */
+    text-align: center;
+    background-color:#c4320a; /* Exemplo de cor para visualização */
+    color: white;
+    padding: 10px 0;
 }
+
+
+

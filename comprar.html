@@ -8,76 +8,138 @@
 </head>
 <body>
     <header>
-        <div class="logo">Santos Motos</div>
+        
         <nav>
+            <div class="logo">
+                <img src="./img/logoSantoMotos.svg" alt=""></a>
+            </div>
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li class="menu_home selected"><a  href="./index.html"><p>HOME</p></a></li>
                 <li class="dropdown">
-                    <a href="#">MOTOS</a>
+                    <a class="menu_motos selected" href="#">MOTOS</a>
                     <ul class="dropdown-menu">
                         <li><a href="./comprar.html">Comprar</a></li>
                         <li><a href="./vender.html">Vender</a></li>
                         <li><a href="./trocar.html">Trocar</a></li>
                     </ul>
                 </li>
-                <li><a href="./sobrenos.html">SOBRE NOS</a></li>
-                <li><a href="./contato.html">CONTATO</a></li>
+                <li class="menu_sobrenos selected"><a href="./sobrenos.html">SOBRE NOS</a></li>
+                <li class="menu_contato selected"><a href="./contato.html">CONTATO</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <div>
-            <h1>VOCE ESTA EM COMPRAR</h1>
-        </div>
-    </section>
-
-    <section class="container_motos_comprar">
-        <div>
-            <img class="motos_img" src="./img/logoSantoMotos.svg" alt="moto1">
-            <div>
-                <ul class="container_motos_info">
-                    <li class="item_motos_info">Marca: Honda</li>
-                    <li class="item_motos_info">Modelo: CB250</li>
-                    
-                    <li class="item_motos_info">Kilometragem: 0KM</li>
-                    <li class="item_motos_info">R$20.000</li>
-                </ul>
+    <section class="container_comprar">
+        <!-- Card 1 -->
+        <div class="card_comprar">
+            <div class="carousel_comprar" id="carousel1">
+                <img src="https://www.yamaha-motor.com.br/ccstore/v1/images/?source=/file/v1561935453053965188/products/30095.3-4-urbano-fazer-fz-25-abs-30095-condicao-img-01-v021.png" class="active_comprar" alt="Imagem 1">
+                <img src="https://tuluamotos.com/wp-content/uploads/Motos-Hero-1024x1024.webp" alt="Imagem 2">
+                <div class="carousel-indicators_comprar">
+                    <div class="dot_comprar"></div>
+                    <div class="dot_comprar"></div>
+                </div>
+            </div>
+            <div class="card-content_comprar">
+                <div class="card-title_comprar">YAMAHA XMAX ABS</div>
+                <div class="card-price_comprar">R$ 31.800</div>
+                <div class="card-info_comprar">2024/2024 · 510 Km</div>
+                <div class="card-footer_comprar">
+                    <a href="#" class="card-button_comprar">Ver parcelas</a>
+                    <div class="card-location_comprar">Curitiba - PR</div>
+                </div>
             </div>
         </div>
-        <div>
-            <img class="motos_img" src="./img/logoSantoMotos.svg" alt="moto1">
-            <div>
-                <ul class="container_motos_info">
-                    <li class="item_motos_info">Marca: Yamaha</li>
-                    <li class="item_motos_info">Modelo: Fazer</li>
-                    <li class="item_motos_info">item 3</li>
-                    <li class="item_motos_info">item 4</li>
-                    <li class="item_motos_info">item 5</li>
-                    <li class="item_motos_info">item 6</li>
 
-                </ul>
+        <!-- Card 2 -->
+        <div class="card_comprar">
+            <div class="carousel_comprar" id="carousel2">
+                <img src="https://tienda-virtual-motos.honda.com.co/dw/image/v2/BFKT_PRD/on/demandware.static/-/Sites-FanalcaSA_CO-Library/default/dw95093509/images/homepage/NAVI%20ROJA%20TRES%20CUARTOS.png" class="active_comprar" alt="Imagem 1">
+                <img src="https://tuluamotos.com/wp-content/uploads/Motos-Hero-1024x1024.webp" alt="Imagem 2">
+                <div class="carousel-indicators_comprar">
+                    <div class="dot_comprar"></div>
+                    <div class="dot_comprar"></div>
+                </div>
+            </div>
+            <div class="card-content_comprar">
+                <div class="card-title_comprar">YAMAHA XMAX ABS</div>
+                <div class="card-price_comprar">R$ 31.800</div>
+                <div class="card-info_comprar">2024/2024 · 510 Km</div>
+                <div class="card-footer_comprar">
+                    <a href="#" class="card-button_comprar">Ver parcelas</a>
+                    <div class="card-location_comprar">Curitiba - PR</div>
+                </div>
             </div>
         </div>
-        <div>
-            <img class="motos_img" src="./img/logoSantoMotos.svg" alt="moto1">
-            <div>
-                <ul class="container_motos_info">
-                    <li class="item_motos_info">Marca: BMW</li>
-                    <li class="item_motos_info">modelo: Sla</li>
-                    <li class="item_motos_info">item 3</li>
-                    <li class="item_motos_info">item 4</li>
-                    <li class="item_motos_info">item 5</li>
-                    <li class="item_motos_info">item 6</li>
-                </ul>
+
+        <!-- Card 3 -->
+        <div class="card_comprar">
+            <div class="carousel_comprar" id="carousel3">
+                <img src="https://auteco.vteximg.com.br/arquivos/ids/333790-599-599/moto_starker_Skuty-One_1000x1000_Verde_1.png?v=638585083842700000" class="active_comprar" alt="Imagem 1">
+                <img src="https://motos.honda.com.co/images/cms/cbf125.png" alt="Imagem 4">
+                <div class="carousel-indicators_comprar">
+                    <div class="dot_comprar"></div>
+                    <div class="dot_comprar"></div>
+                </div>
+            </div>
+            <div class="card-content_comprar">
+                <div class="card-title_comprar">YAMAHA XMAX ABS</div>
+                <div class="card-price_comprar">R$ 31.800</div>
+                <div class="card-info_comprar">2024/2024 · 510 Km</div>
+                <div class="card-footer_comprar">
+                    <a href="#" class="card-button_comprar">Ver parcelas</a>
+                    <div class="card-location_comprar">Curitiba - PR</div>
+                </div>
             </div>
         </div>
-    </section>
-
-    <a href="https://wa.me/message/H3GLRA6CMSWJO1" class="whatsapp-icon" target="_blank">WhatsApp</a>
-
+        <!-- Card 4 -->
+        <div class="card_comprar">
+            <div class="carousel_comprar" id="carousel4">
+                <img src="https://www.yamaha-motor.com.br/ccstore/v1/images/?source=/file/v1561935453053965188/products/30095.3-4-urbano-fazer-fz-25-abs-30095-condicao-img-01-v021.png" class="active_comprar" alt="Imagem 1">
+                <img src="https://tienda-virtual-motos.honda.com.co/dw/image/v2/BFKT_PRD/on/demandware.static/-/Sites-FanalcaSA_CO-Library/default/dw95093509/images/homepage/NAVI%20ROJA%20TRES%20CUARTOS.png" alt="Imagem 1">
+                <div class="carousel-indicators_comprar">
+                    <div class="dot_comprar"></div>
+                    <div class="dot_comprar"></div>
+                </div>
+            </div>
+            <div class="card-content_comprar">
+                <div class="card-title_comprar">YAMAHA XMAX ABS</div>
+                <div class="card-price_comprar">R$ 31.800</div>
+                <div class="card-info_comprar">2024/2024 · 510 Km</div>
+                <div class="card-footer_comprar">
+                    <a href="#" class="card-button_comprar">Ver parcelas</a>
+                    <div class="card-location_comprar">Curitiba - PR</div>
+                </div>
+            </div>
+        </div>
+<!-- Card 5 -->
+    <div class="card_comprar">
+        <div class="carousel_comprar" id="carousel5">
+            <img src="https://www.yamaha-motor.com.br/ccstore/v1/images/?source=/file/v1561935453053965188/products/30095.3-4-urbano-fazer-fz-25-abs-30095-condicao-img-01-v021.png" class="active_comprar" alt="Imagem 1">
+            <img src="https://tienda-virtual-motos.honda.com.co/dw/image/v2/BFKT_PRD/on/demandware.static/-/Sites-FanalcaSA_CO-Library/default/dw95093509/images/homepage/NAVI%20ROJA%20TRES%20CUARTOS.png" alt="Imagem 1">
+            <div class="carousel-indicators_comprar">
+                <div class="dot_comprar"></div>
+                <div class="dot_comprar"></div>
+            </div>
+        </div>
+            <div class="card-content_comprar">
+            <div class="card-title_comprar">YAMAHA XMAX ABS</div>
+            <div class="card-price_comprar">R$ 31.800</div>
+            <div class="card-info_comprar">2024/2024 · 510 Km</div>
+            <div class="card-footer_comprar">
+                <a href="#" class="card-button_comprar">Ver parcelas</a>
+                <div class="card-location_comprar">Curitiba - PR</div>
+        </div>
+         </div>
+    </div>
+        <a href="https://wa.me/message/H3GLRA6CMSWJO1" class="whatsapp-icon" target="_blank">WhatsApp</a>
+        
+        </section>
+           
     <footer>
-        <p>Todos os direitos reservados</p>        
+         <p>Todos os direitos reservados</p>        
     </footer>
+    <script src="./script_comprar.js"></script>    
 </body>
+
 </html>

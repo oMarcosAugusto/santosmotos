@@ -52,6 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000);
 });
 
+
+
 console.log("Largura da tela:", window.innerWidth);
 console.log("Altura da tela:", window.innerHeight);
 

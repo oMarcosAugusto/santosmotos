@@ -1,23 +1,23 @@
 /* whatsapp.css */
 
 .whatsapp-icon {
-    position: absolute;         /* Fixa o botão no canto da tela */
-    right: 0;                 /* Posiciona no canto esquerdo */
-    top: 50%;                /* Centraliza verticalmente */
-    transform: translateY(700%); /* Ajuste para centralizar exatamente no meio */
-    background-color: #25D366; /* Cor de fundo verde (padrão do WhatsApp) */
-    color: white;            /* Cor do texto */
-    padding: 10px 20px;      /* Espaçamento interno */
-    text-decoration: none;    /* Remove o sublinhado */
+    position: fixed;            /* Fixa o botão na tela */
+    right: 20px;                /* Posiciona o botão no canto direito */
+    top: 50%;                   /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajuste para centralizar exatamente no meio */
+    background-color: #25D366;  /* Cor de fundo verde (padrão do WhatsApp) */
+    color: white;               /* Cor do texto */
+    padding: 10px 20px;         /* Espaçamento interno */
+    text-decoration: none;      /* Remove o sublinhado */
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
-    font-weight: bold;       /* Deixa o texto em negrito */
-    display: flex;           /* Permite alinhamento com ícone */
-    align-items: center;     /* Centraliza o conteúdo verticalmente */
-    
+    font-weight: bold;          /* Deixa o texto em negrito */
+    display: flex;              /* Permite alinhamento com ícone */
+    align-items: center;        /* Centraliza o conteúdo verticalmente */
+    z-index: 9999;              /* Garante que o botão fique acima de outros elementos */
 }
 
 /* Efeito de hover para dar destaque */
 .whatsapp-icon:hover {
-    background-color: #20b857; /* Tom de verde um pouco mais escuro ao passar o mouse */
+    background-color: #20b857;  /* Tom de verde um pouco mais escuro ao passar o mouse */
 }

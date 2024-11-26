@@ -1,11 +1,4 @@
 /* layout.css */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #111;
-}
 
 nav {
     flex: 1; /* Ocupa o espaço disponível entre logo e borda direita */
