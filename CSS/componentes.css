@@ -5,15 +5,13 @@
   max-width: 100%;
   margin-top: 25px;
   margin-right: 450px;
+  margin-bottom: 20px;
 }
 
 .logo > img {
   display: flex;
   max-width: 15%;
   margin-left: 95px;
-  margin-top: -50px;
-  padding-bottom: -50;
-  margin-bottom: -50px;
 }
 
 /* Menu */
@@ -22,13 +20,14 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: px;
   background-color: #111;
   z-index: 1000; /* Garante que o menu fique acima do conteúdo, mas abaixo da logo */
   padding: 10px 0;
+  padding-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: solid 0.01px #64080a;
 }
 
 nav ul {
@@ -91,6 +90,7 @@ body {
 }  
 
 .highlights {
+  padding-top: 30px;
   font-weight: 600;
   font-size: 20px;
   list-style: none;
@@ -98,4 +98,9 @@ body {
 
 strong {
   font-weight: 700;
+}
+ .selected {
+  text-shadow: 2px 2px 8px rgba(197, 14, 14, 0.938);
+  
+  color: #fefefefe; /* Opcional, para alterar a cor do texto */
 }

@@ -14,12 +14,11 @@
 
 /* Estilo do card */
 .card_comprar {
-    margin-top: 0px;
-    padding-top: 0px;
+   
     display: grid;
     width: 100%;
     max-width: 400px;
-    background: #333;
+    background: #333333cf;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -32,13 +31,14 @@
 }
 
 /* Estilo do carrossel */
+
 .carousel_comprar {
+    display: block;
     position: relative;
-    width: 90%;
+    width: 300px;
     height: 300px;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+    object-fit: fill;
 }
 
 .carousel_comprar img {
@@ -56,7 +56,8 @@
     opacity: 1;
 }
 
-/* Indicadores do carrossel */
+/* Indicadores do carrossel */ 
+
 .carousel-indicators_comprar {
     position: absolute;
     bottom: 10px;
@@ -67,8 +68,8 @@
 }
 
 .carousel-indicators_comprar .dot_comprar {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     background: #ddd;
     border-radius: 50%;
     cursor: pointer;
@@ -81,12 +82,14 @@
 /* Conteúdo do card */
 .card-content_comprar {
     padding: 15px;
+    background-color: #fff
 }
 
 .card-title_comprar {
     font-size: 1.2rem;
     font-weight: bold;
     margin-bottom: 10px;
+    color: #333;
 }
 
 .card-price_comprar {
@@ -97,7 +100,8 @@
 
 .card-info_comprar {
     font-size: 0.9rem;
-    color: #beb8b8;
+    color: #333;
+
     margin-bottom: 15px;
 }
 
@@ -108,7 +112,7 @@
 }
 
 .card-button_comprar {
-    background: #928f8f;
+    background: #992f30;
     color: #fff;
     padding: 10px 15px;
     border: none;
@@ -123,8 +127,10 @@
 }
 
 .card-location_comprar {
+    padding-right: 10px;
     font-size: 0.8rem;
-    color: #999999bb;
+    color: #333333a4;
+
 }
 
 /* Responsividade */

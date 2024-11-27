@@ -1,36 +1,51 @@
-const carousel = document.querySelector('.carousel_comprar');
-const images = document.querySelectorAll('.carousel_comprar img');
-const indicators = document.querySelector('.carousel_comprar-indicators');
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".card_comprar");
 
-let currentIndex = 0;
-const totalImages = images.length;
+  // Função para iniciar o carrossel
+  function startCarousel(card) {
+      const images = card.querySelectorAll(".carousel_comprar img");
+      const dots = card.querySelectorAll(".dot_comprar");
+      let currentIndex = 0;
 
-// Criar bolinhas dinamicamente
-images.forEach((_, index) => {
-  const dot = document.createElement('span');
-  dot.classList.add('dot');
-  if (index === 0) dot.classList.add('active');
-  indicators.appendChild(dot);
+      // Função para atualizar a imagem
+      function updateImage() {
+          images.forEach((img, index) => {
+              img.classList.remove("active_comprar");
+              dots[index].classList.remove("active");
+          });
 
-  // Navegar para a imagem correspondente
-  dot.addEventListener('click', () => {
-    updateCarousel(index);
+          images[currentIndex].classList.add("active_comprar");
+          dots[currentIndex].classList.add("active");
+      }
+
+      // Navegação automática
+      const interval = setInterval(() => {
+          currentIndex = (currentIndex + 1) % images.length;
+          updateImage();
+      }, 3000);
+
+      // Funcionalidade de clique nas bolinhas
+      dots.forEach((dot, index) => {
+          dot.addEventListener("click", function () {
+              clearInterval(interval); // Para a navegação automática
+              currentIndex = index;
+              updateImage();
+          });
+      });
+
+      // Parar o carrossel quando o mouse sai do card
+      card.addEventListener("mouseleave", function () {
+          clearInterval(interval); // Para o carrossel quando o mouse sai
+      });
+
+      // Iniciar o carrossel
+      updateImage();
+  }
+
+  // Adicionar o evento de mouse enter
+  cards.forEach(card => {
+      card.addEventListener("mouseenter", function () {
+          startCarousel(card); // Inicia o carrossel ao passar o mouse sobre o card
+      });
   });
 });
-
-// Atualizar carrossel
-function updateCarousel(index) {
-  images[currentIndex].classList.remove('active');
-  indicators.children[currentIndex].classList.remove('active');
-
-  currentIndex = index;
-
-  images[currentIndex].classList.add('active');
-  indicators.children[currentIndex].classList.add('active');
-}
-
-// Navegação automática
-setInterval(() => {
-  const nextIndex = (currentIndex + 1) % totalImages;
-  updateCarousel(nextIndex);
-}, 3000); // Troca a cada 3 segundos

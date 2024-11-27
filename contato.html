@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Santos Motos</div>
+    <header>        
         <nav>
+            <div class="logo">
+                <img src="./img/logoSantoMotos.svg" alt=""></a>
+            </div>
             <ul>
-                <li><a href="index.html">HOME</a></li>
+                <li class="menu_home "><a  href="./index.html"><p>HOME</p></a></li>
                 <li class="dropdown">
-                    <a href="#">MOTOS</a>
+                    <a class="menu_motos" href="#">MOTOS</a>
                     <ul class="dropdown-menu">
                         <li><a href="./comprar.html">Comprar</a></li>
                         <li><a href="./vender.html">Vender</a></li>
                         <li><a href="./trocar.html">Trocar</a></li>
                     </ul>
                 </li>
-                <li><a href="./sobrenos.html">SOBRE NOS</a></li>
-                <li><a href="./contato.html">CONTATO</a></li>
+                <li class="menu_sobrenos"><a href="./sobrenos.html">SOBRE NOS</a></li>
+                <li class="menu_contato selected"><a href="#">CONTATO</a></li>
             </ul>
         </nav>
     </header>
+
     <section>
         <div>
             <h1>VOCE ESTA EM CONTATO</h1>
@@ -36,5 +39,6 @@
     <footer>
         <p>Todos os direitos reservados</p>        
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

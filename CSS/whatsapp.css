@@ -2,7 +2,7 @@
 
 .whatsapp-icon {
     position: fixed;            /* Fixa o botão na tela */
-    right: 20px;                /* Posiciona o botão no canto direito */
+    right: 0;                /* Posiciona o botão no canto direito */
     top: 50%;                   /* Centraliza verticalmente */
     transform: translateY(-50%); /* Ajuste para centralizar exatamente no meio */
     background-color: #25D366;  /* Cor de fundo verde (padrão do WhatsApp) */
