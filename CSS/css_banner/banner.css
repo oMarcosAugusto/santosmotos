@@ -1,0 +1,17 @@
+.banner {
+  grid-row: 2;
+  position: relative; /* Necessário para posicionar o conteúdo */
+  width: 100%; /* Garantir que o banner ocupe toda a largura */
+  height: auto; /* Ajuste para a altura desejada do banner */
+  overflow: hidden; /* Garante que nada "vaze" do container */
+}
+
+.banner_img {
+  position: absolute; /* Faz a imagem se alinhar ao container */
+  top: 0;
+  left: 0;
+  width: 100%; /* Largura total do container */
+  height: 100%; /* Altura total do container */
+  object-fit: cover; /* Faz a imagem preencher o espaço sem distorções */
+  object-position: center; /* Centraliza a imagem dentro do container */
+}

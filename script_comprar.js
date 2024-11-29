@@ -1,7 +1,8 @@
-document.querySelectorAll('.carousel_comprar').forEach((carousel, index) => {
+document.querySelectorAll('.carousel_comprar').forEach((carousel) => {
     const images = carousel.querySelectorAll('img');
     const carouselIndicators = carousel.querySelector('.carousel-indicators_comprar');
     let currentIndex = 0;
+    let interval; // Variável para armazenar o intervalo
 
     // Gerar as bolinhas dinamicamente
     for (let i = 0; i < images.length; i++) {
@@ -26,15 +27,28 @@ document.querySelectorAll('.carousel_comprar').forEach((carousel, index) => {
         showImage(currentIndex);
     }
 
-    function prevImage() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        showImage(currentIndex);
+    function startCarousel() {
+        if (!interval) {
+            interval = setInterval(nextImage, 2000); // Cada 3 segundos, muda a imagem automaticamente
+        }
+    }
+
+    function stopCarousel() {
+        if (interval) {
+            clearInterval(interval);
+            interval = null;
+        }
     }
 
     // Inicia o carrossel para o primeiro item
     showImage(currentIndex);
 
-    // Inicia a navegação automática
-    setInterval(nextImage, 3000); // Cada 3 segundos, muda a imagem automaticamente
-});
+    // Adiciona os eventos de mouseover e mouseout
+    carousel.addEventListener('mouseover', () => {
+        startCarousel(); // Inicia o carrossel ao passar o mouse
+    });
 
+    carousel.addEventListener('mouseout', () => {
+        stopCarousel(); // Para o carrossel ao remover o mouse
+    });
+});

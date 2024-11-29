@@ -1,8 +1,15 @@
 @import url('./CSS/global.css');
-@import url('./CSS/layout.css');
-@import url('./CSS/componentes.css');
-@import url('./CSS/carousel.css');
-@import url('./CSS/dropdown.css');
-@import url('./CSS/whatsapp.css');
-@import url('./CSS/comprar.css');
-@import url('./CSS/media.css');
+@import url('./CSS/css_menu/logo.css');
+@import url('./CSS/css_menu/menu.css');
+@import url('./CSS/css_menu/dropdown.css');
+@import url('./CSS/css_banner/banner.css');
+@import url('./CSS/css_banner/text_banner.css');
+@import url('./CSS/css_conteudo/conteudo.css');
+@import url('./CSS/css_conteudo/btn.css');
+@import url('./CSS/css_conteudo/css_carousel/carousel.css');
+@import url('./CSS/css_whatsapp/whatsApp.css');
+@import url('./CSS/css_footer/footer.css');
+
+@import url('./CSS/css_comprar/comprar.css');
+@import url('./CSS/css_comprar/comprar_carousel.css');
+@import url('./CSS/css_comprar/comprar_card.css');

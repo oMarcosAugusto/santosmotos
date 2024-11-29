@@ -1,51 +1,29 @@
 /* Estilos globais */
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #111;
-}
-
-
-body {
-    color: #fff;
-    background-color: #111;
-    overflow-x: hidden; /* Evita rolagem horizontal */
+  }
+  
+  body {
+     overflow-x: hidden; /* Evita rolagem horizontal */
+     background-color: black;
     /* overflow-y: hidden;  Evita rolagem vertical  */
-    margin: 0;
-    height: 100vh; /* Define altura de 100% da viewport */
-}
+  }
+  
+  .container  {
+    margin: 0 auto;
+    margin-bottom: -20px;
+    display: grid;
+    grid-template-columns: repeat(4fr, 1fr); /* Colunas flexíveis */
+    grid-template-rows: 6rem 49rem 40rem 10rem;
+    grid-row: auto-fill auto-fill  auto-fill  auto-fill;
+    height: 100vh;
+  }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%; /* Garante que o body e o html ocupem 100% da janela */
-    display: flex;
-    flex-direction: column;
-}
-
-header {
-    flex-shrink: 0; /* Garante que o header não seja comprimido */
-}
-
-section {
-    flex-grow: 1; /* Faz o conteúdo ocupar o espaço disponível */
-}
-
-footer {
-    flex-shrink: 0; /* O footer sempre terá seu tamanho padrão */
-    text-align: center;
-    background-color:#c4320a; /* Exemplo de cor para visualização */
-    color: white;
-    padding: 10px 0;
-}
-
-
-
+  .menu, .conteudo , .footer, .banner{
+    width: 100%; /* Opcional, mas útil em casos de inconsistências */
+    align-items: center;
+    align-content: center;
+  }

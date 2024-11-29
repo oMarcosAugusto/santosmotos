@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/icone.svg" type="image/svg+xml">
     <title>Santos Motos</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        
+        <!-- MENU -->
+    <div class="menu">        
         <nav>
             <div class="logo">
                 <img src="./img/logoSantoMotos.svg" alt=""></a>
             </div>
             <ul>
-                <li class="menu_home selected"><a  href="#"><p>HOME</p></a></li>
+                <li class="menu_home selected"> <a href="#">HOME</a></li>
+
                 <li class="dropdown">
                     <a class="menu_motos" href="#">MOTOS</a>
                     <ul class="dropdown-menu">
@@ -26,18 +28,29 @@
                 <li class="menu_sobrenos"><a  href="./sobrenos.html">SOBRE NOS</a></li>
                 <li class="menu_contato"><a  href="./contato.html">CONTATO</a></li>
             </ul>
-        </nav>
-    </header>
-    <section class="hero">
+        </nav>    
+    </div>
+
+    <div class="container">
+        <!-- BANNER -->
+        <section class="banner">
+        <img class="banner_img" src="./img/banner/novidades.svg" alt="">
+
+              <!-- TEXTO QUE FICARA FIXO NO BANNE -->
         <div class="content">
-            <h1>PENSANDO EM <br> <strong>COMPRAR UMA MOTO?</strong></h1>
+            <h1>AQUI<br> CADA MOTO CONTA UM <br> SONHO, <br> <strong>QUAL SERÁ O SEU?</strong></h1>
             <ul class="highlights">
-                <li>Mais de 10 <br> anos de <br> experiência</li>
-                <li>Procedência e <br> confiança</li>
-                <li>Profissionais <br> capacitados</li>
+                <li>MAIS DE 10 <br> ANOS DE <br> EXPERIENCIA</li>
+                <br>
+                <li>PROCEDENCIA E <br> CONFIANÇA</li>
+                <br>
+                <li>PROFISSIONAIS <br> CAPACITADOS</li>
             </ul>            
         </div>
+        </section>
 
+    <!-- CONTEUDO -->
+    <section class="conteudo">
         <!-- Carrossel -->
         <div class="carousel-container">
             <button class="carousel-button prev" id="prevBtn">&#10094;</button>
@@ -65,10 +78,38 @@
             <a href="#" class="btn">Confira as novidades</a>
         </div>
         <a href="https://wa.me/message/H3GLRA6CMSWJO1" class="whatsapp-icon" target="_blank">WhatsApp</a>
+
     </section>
-    <footer>
-        <p>Todos os direitos reservados</p>        
-    </footer>
-    <script src="./script.js"></script>
+
+    <!-- FOOTER -->
+    <footer class="footer-bg">
+        <div class="footer footer_container">
+          <!-- <img src="./img/logoSantoMotos.svg" width="136" height="32" alt="Bikcraft"> -->
+          <div class="footer-contato">
+            <h3 class="font-2-l-b cor-0">Contato</h3>
+            <ul class="font-2-m cor-5">
+              <li><a href="tel:+552199999999">+55 41 9999-9999</a></li>
+              <li><a href="mailto:contato@bikcraft.com">contato@santosmotos.com</a></li>
+              <li>Rua Ali Perto, 42 - Curutiba</li>
+              <li>Curitiba - PR</li>
+            </ul>
+            <div class="footer-redes">
+              <a href="./">
+                <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
+              </a>
+              <a href="./">
+                <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
+              </a>
+              <a href="./">
+                <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
+              </a>
+            </div>
+          </div>
+    
+          <p class="footer-copy font-2-m cor-6">Deiron © Alguns direitos reservados.</p>
+        </div>
+      </footer>
+</div>
+<script src="./script.js"></script>
 </body>
 </html>

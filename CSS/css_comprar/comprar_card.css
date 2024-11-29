@@ -1,0 +1,93 @@
+/* Container do grid para os cards */
+.container_comprar {
+   padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colunas flexíveis */
+    gap: 20px; /* Espaçamento entre os cards */
+    margin: 25px auto; /* Centraliza o container horizontalmente */
+    justify-content: center; /* Centraliza os cards na horizontal */
+    align-items: start; /* Alinha os cards no topo */
+    max-width: auto; /* Garante que o container ocupe toda a largura disponível */
+    max-width: 1200px;
+    ; /* Limita a largura máxima do container */
+    min-height: calc(100vh - 50px); /* Garante que o container ocupe a altura restante */
+}
+
+/* Estilo do card */
+.card_comprar {   
+    display: grid;
+    width: 100%;
+    max-width: 400px;
+    background: #333333cf;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin: 0 auto; /* Centraliza o card dentro do container */
+}
+
+.card_comprar:hover {
+    transform: scale(1.03);
+}
+
+/* Conteúdo do card */
+.card-content_comprar {
+    margin: 0;
+    padding: 15px;
+    background-color: #fff
+}
+
+.card-title_comprar {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-price_comprar {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.card-info_comprar {
+    font-size: 0.9rem;
+    color: #333;
+
+    margin-bottom: 15px;
+}
+
+.card-footer_comprar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-button_comprar {
+    background: #992f30;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.card-button_comprar:hover {
+    background: #555;
+}
+
+.card-location_comprar {
+    padding-right: 10px;
+    font-size: 0.8rem;
+    color: #333333a4;
+
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container_comprar {
+        grid-template-columns: 1fr; /* Para telas menores, exibe em uma coluna */
+    }
+}

@@ -1,33 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprar - Santos Motos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logoSantoMotos.svg" type="image/svg+xml">
+    <title>Santos Motos</title>
 </head>
 <body>
-    <header>        
-        <nav>
-            <div class="logo">
-                <img src="./img/logoSantoMotos.svg" alt=""></a>
-            </div>
-            <ul>
-                <li class="menu_home "><a  href="./index.html"><p>HOME</p></a></li>
-                <li class="dropdown">
-                    <a class="menu_motos selected" href="#">MOTOS</a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Comprar</a></li>
-                        <li><a href="./vender.html">Vender</a></li>
-                        <li><a href="./trocar.html">Trocar</a></li>
-                    </ul>
-                </li>
-                <li class="menu_sobrenos"><a href="./sobrenos.html">SOBRE NOS</a></li>
-                <li class="menu_contato"><a href="./contato.html">CONTATO</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- MENU -->
+<div class="menu_comprar">        
+    <nav>
+        <div class="logo">
+            <img src="./img/logoSantoMotos.svg" alt=""></a>
+        </div>
+        <ul>
+            <li class="menu_home"> <a href="./index.html">HOME</a></li>
 
+            <li class="dropdown">
+                <a class="menu_motos" href="#">MOTOS</a>
+                <ul class="dropdown-menu">
+                    <li><a href="./comprar.html">Comprar</a></li>
+                    <li><a href="./vender.html">Vender</a></li>
+                    <li><a href="./trocar.html">Trocar</a></li>
+                </ul>
+            </li>
+            <li class="menu_sobrenos"><a  href="./sobrenos.html">SOBRE NOS</a></li>
+            <li class="menu_contato"><a  href="./contato.html">CONTATO</a></li>
+        </ul>
+    </nav>    
+</div> 
+
+<!-- CONTEUDO -->
     <section class="container_comprar">
         <!-- Card 1 -->
         <div class="card_comprar">
@@ -112,15 +116,39 @@
             </div>
         </div>
 
-        <a href="https://wa.me/message/H3GLRA6CMSWJO1" class="whatsapp-icon" target="_blank">WhatsApp</a>
-        
-        </section>
-           
-    <footer>
-         <p>Todos os direitos reservados</p>        
-    </footer>
-    <script src="./script_comprar.js"></script>  
-    <script src="./script.js"></script>  
-</body>
+    </section>
 
+
+    <!-- FOOTER -->
+    <footer class="footer-bg footer_comprar">
+        <div class="footer footer_container">
+          <!-- <img src="./img/logoSantoMotos.svg" width="136" height="32" alt="Bikcraft"> -->
+          <div class="footer-contato">
+            <h3 class="font-2-l-b cor-0">Contato</h3>
+            <ul class="font-2-m cor-5">
+              <li><a href="tel:+552199999999">+55 41 9999-9999</a></li>
+              <li><a href="mailto:contato@bikcraft.com">contato@santosmotos.com</a></li>
+              <li>Rua Ali Perto, 42 - Curutiba</li>
+              <li>Curitiba - PR</li>
+            </ul>
+            <div class="footer-redes">
+              <a href="./">
+                <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
+              </a>
+              <a href="./">
+                <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
+              </a>
+              <a href="./">
+                <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
+              </a>
+            </div>
+          </div>
+    
+          <p class="footer-copy font-2-m cor-6">Deiron © Alguns direitos reservados.</p>
+        </div>
+      </footer>
+</div>
+<script src="./script_comprar.js"></script>  
+<script src="./script.js"></script>  
+</body>
 </html>

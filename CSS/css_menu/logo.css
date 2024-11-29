@@ -1,0 +1,13 @@
+/* Logo */
+.logo {
+  position: absolute; /* Fixa a logo à esquerda */
+  left: 50px; /* Ajusta a logo para o canto esquerdo */
+  top: 50%; /* Ajusta verticalmente */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+ 
+}
+
+.logo > img {
+  max-width: 12%; /* Ajuste do tamanho da logo */
+  height: auto; /* Mantém a proporção da logo */
+}

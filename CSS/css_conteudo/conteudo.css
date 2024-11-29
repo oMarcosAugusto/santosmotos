@@ -1,0 +1,19 @@
+.conteudo {
+  display: grid;
+  grid-template-columns: repeat(3fr);
+  background-color: rgb(0, 0, 0);
+  grid-row: 3; /* Cresce ocupando o espaço restante */
+  position: relative; /* Necessário para o pseudo-elemento se posicionar em relação ao pai */
+}
+
+.conteudo::before {
+  content: ''; /* Cria o elemento visual */
+  position: absolute; /* Permite posicionar livremente */
+  top: 0; /* Alinha no topo */
+  left: 50%; /* Começa no meio horizontal */
+  transform: translateX(-50%); /* Centraliza */
+  width: 60%; /* Ajuste a largura da borda no meio */
+  height: 4px; /* Espessura inicial */
+  background: linear-gradient(to right, transparent, red, transparent); /* Gradiente para afinar nas pontas */
+  border-radius: 2px; /* Suaviza as extremidades */
+}

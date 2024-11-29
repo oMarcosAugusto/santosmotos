@@ -1,0 +1,67 @@
+.carousel-container {
+    padding-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Definição do carrossel em linha */
+  .carousel {
+    display: flex;
+  
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Estilo dos itens do carrossel */
+  .carousel-item {
+    flex: 0 0 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .carousel-item img {
+    width: 50%;
+    border-radius: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Destaque no item ativo (central) */
+  .carousel-item.active img {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  
+  .carousel-item:not(.active) img {
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+  
+  /* Botões de navegação */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+  }
+  
+  .prev {
+    left: 20px;
+  }
+  
+  .next {
+    right: 20px;
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }

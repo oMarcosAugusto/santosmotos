@@ -1,0 +1,54 @@
+
+nav {
+  position: fixed; /* Fixa o menu no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #111;
+  z-index: 1000; /* Garante que o menu fique acima do conteúdo */
+  display: flex;
+  justify-content: space-between; /* Espaça logo e menu */
+  align-items: center;
+  padding: 20px 40px;
+}
+
+nav ul {
+  padding: 15px 200px;
+
+  margin: 0 auto; /* Remova margin: 0 auto, pois não afeta flexbox */
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  display: block;
+  padding: 10px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1; /* Garante que o link esteja acima de outros elementos */
+}
+
+/* Borda apenas nos itens do menu principal (não no submenu) */
+header > nav > ul > li {
+  position: relative;
+  padding-right: 20px;
+}
+
+nav > ul > li:not(:last-child) {
+  border-right: 1px solid #d43f3a;
+}
+
+/* Efeitos de hover para o menu */
+.menu_home:hover a,
+.menu_motos:hover,
+.menu_sobrenos:hover,
+.menu_contato:hover {
+  text-shadow: 2px 2px 8px rgba(197, 14, 14, 0.938);
+}
