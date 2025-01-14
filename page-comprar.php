@@ -1,43 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./img/logoSantoMotos.svg" type="image/svg+xml">
-    <title>Santos Motos</title>
-</head>
+<?php
+// Template Name: Comprar
+?>
+
+<?php get_header(); ?>
+
 <body>
     <!-- MENU -->
-<div class="menu_comprar">        
+    <div class="menu_comprar">        
     <nav>
         <div class="logo">
-            <img src="./img/logoSantoMotos.svg" alt=""></a>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/logoSantoMotos.svg" alt="Logo Santos Motos">
         </div>
         <ul>
-            <li class="menu_home"> <a href="./index.html">HOME</a></li>
-
+            <li class="menu_home"><a href="/home/">HOME</a></li>
             <li class="dropdown">
                 <a class="menu_motos" href="#">MOTOS</a>
                 <ul class="dropdown-menu">
-                    <li><a href="./comprar.html">Comprar</a></li>
-                    <li><a href="./vender.html">Vender</a></li>
-                    <li><a href="./trocar.html">Trocar</a></li>
+                <li><a href="<?php echo get_permalink( get_page_by_path( 'comprar' ) ); ?>">Comprar</a></li>
+
+
+                    <li><a href="/vender/">Vender</a></li>
+                    <li><a href="<?php echo home_url('/trocar/'); ?>">Trocar</a></li>
                 </ul>
             </li>
-            <li class="menu_sobrenos"><a  href="./sobrenos.html">SOBRE NOS</a></li>
-            <li class="menu_contato"><a  href="./contato.html">CONTATO</a></li>
+            <li class="menu_sobrenos"><a href="<?php echo home_url('/sobrenos/'); ?>">SOBRE NÓS</a></li>
+            <li class="menu_contato"><a href="<?php echo home_url('/contato/'); ?>">CONTATO</a></li>
         </ul>
     </nav>    
-</div> 
+</div>
 
-<!-- CONTEUDO -->
+    <!-- CONTEÚDO -->
     <section class="container_comprar">
         <!-- Card 1 -->
         <div class="card_comprar">
             <div class="carousel_comprar" id="carousel1">
-                <img src="./img/motos/0fb4f9fe-38bf-419b-8100-7028429c0930.jpg" class="active_comprar" alt="Imagem 1">
-                <img src="./img/motos/12dc96fb-7368-4f0e-bf48-0ae6c1fd604f.jpg" alt="Imagem 2">
+                <!-- Corrigido os caminhos das imagens -->
+                <img src="<?php echo get_template_directory_uri(); ?>/img/motos/0fb4f9fe-38bf-419b-8100-7028429c0930.jpg" class="active_comprar" alt="Imagem 1">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/motos/12dc96fb-7368-4f0e-bf48-0ae6c1fd604f.jpg" alt="Imagem 2">
                 <div class="carousel-indicators_comprar">
                     <div class="dot_comprar"></div>
                     <div class="dot_comprar"></div>
@@ -57,8 +56,9 @@
         <!-- Card 2 -->
         <div class="card_comprar">
             <div class="carousel_comprar" id="carousel2">
-                <img src="./img/motos/5f20a9a4-1dc4-47df-b82f-c89fa74ccb22.jpg" class="active_comprar" alt="Imagem 1">
-                <img src="./img/motos/6b13e28a-5a0f-4234-ad36-68fee90e784e.jpeg" alt="Imagem 2">
+                <!-- Corrigido os caminhos das imagens -->
+                <img src="<?php echo get_template_directory_uri(); ?>/img/motos/5f20a9a4-1dc4-47df-b82f-c89fa74ccb22.jpg" class="active_comprar" alt="Imagem 1">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/motos/6b13e28a-5a0f-4234-ad36-68fee90e784e.jpeg" alt="Imagem 2">
                 <div class="carousel-indicators_comprar">
                     <div class="dot_comprar"></div>
                     <div class="dot_comprar"></div>
@@ -78,8 +78,9 @@
         <!-- Card 3 -->
         <div class="card_comprar">
             <div class="carousel_comprar" id="carousel3">
-                <img src="./img/motos/7b06aeac-f42f-48bb-811a-7f4e12faf561.jpg" class="active_comprar" alt="Imagem 1">
-                <img src="./img/motos/IMG_20241111_112702444.jpg" alt="Imagem 4">
+                <!-- Corrigido os caminhos das imagens -->
+                <img src="<?php echo get_template_directory_uri(); ?>/img/motos/7b06aeac-f42f-48bb-811a-7f4e12faf561.jpg" class="active_comprar" alt="Imagem 1">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/motos/IMG_20241111_112702444.jpg" alt="Imagem 4">
                 <div class="carousel-indicators_comprar">
                     <div class="dot_comprar"></div>
                     <div class="dot_comprar"></div>
@@ -95,11 +96,13 @@
                 </div>
             </div>
         </div>
+
         <!-- Card 4 -->
         <div class="card_comprar">
             <div class="carousel_comprar" id="carousel4">
-                <img src="./img/motos/IMG_20241111_110459399.jpg" class="active_comprar" alt="Imagem 1">
-                <img src="./img/motos/IMG_20241111_112702444.jpg" alt="Imagem 1">
+                <!-- Corrigido os caminhos das imagens -->
+                <img src="<?php echo get_template_directory_uri(); ?>/img/motos/IMG_20241111_110459399.jpg" class="active_comprar" alt="Imagem 1">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/motos/IMG_20241111_112702444.jpg" alt="Imagem 1">
                 <div class="carousel-indicators_comprar">
                     <div class="dot_comprar"></div>
                     <div class="dot_comprar"></div>
@@ -115,40 +118,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
-
-    <!-- FOOTER -->
-    <footer class="footer-bg footer_comprar">
-        <div class="footer footer_container">
-          <!-- <img src="./img/logoSantoMotos.svg" width="136" height="32" alt="Bikcraft"> -->
-          <div class="footer-contato">
-            <h3 class="font-2-l-b cor-0">Contato</h3>
-            <ul class="font-2-m cor-5">
-              <li><a href="tel:+552199999999">+55 41 9999-9999</a></li>
-              <li><a href="mailto:contato@bikcraft.com">contato@santosmotos.com</a></li>
-              <li>Rua Ali Perto, 42 - Curutiba</li>
-              <li>Curitiba - PR</li>
-            </ul>
-            <div class="footer-redes">
-              <a href="./">
-                <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
-              </a>
-              <a href="./">
-                <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
-              </a>
-              <a href="./">
-                <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
-              </a>
-            </div>
-          </div>
-    
-          <p class="footer-copy font-2-m cor-6">Deiron © Alguns direitos reservados.</p>
-        </div>
-      </footer>
-</div>
-<script src="./script_comprar.js"></script>  
-<script src="./script.js"></script>  
-</body>
-</html>
+    <?php get_footer(); ?>

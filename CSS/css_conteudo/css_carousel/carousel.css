@@ -1,6 +1,6 @@
 .carousel-container {
     padding-top: 50px;
-    width: 100%;
+    width: 70%;
     overflow: hidden;
     position: relative;
     margin: auto;
@@ -15,7 +15,9 @@
   
   /* Estilo dos itens do carrossel */
   .carousel-item {
-    flex: 0 0 33.33%;
+    flex: 0 0 48%;
+    margin-left: -100px;
+    margin-right: -100px;
     display: flex;
     justify-content: center;
     align-items: center;

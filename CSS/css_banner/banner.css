@@ -4,6 +4,7 @@
   width: 100%; /* Garantir que o banner ocupe toda a largura */
   height: auto; /* Ajuste para a altura desejada do banner */
   overflow: hidden; /* Garante que nada "vaze" do container */
+  margin-top: -25px;
 }
 
 .banner_img {

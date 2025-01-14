@@ -1,3 +1,13 @@
+/*
+Theme Name: Satos Motos
+Theme URI: https://santosmotos.com
+Author: the WordPress team
+Author URI: https://deiron.com
+Description: Criado para a loja de motos Santos Motos
+Version: 1.3
+
+*/
+
 @import url('./CSS/global.css');
 @import url('./CSS/css_menu/logo.css');
 @import url('./CSS/css_menu/menu.css');
